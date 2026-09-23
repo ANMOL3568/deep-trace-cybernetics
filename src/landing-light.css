@@ -1,0 +1,156 @@
+/* Light brand theme for the public website and its authentication dialogs. */
+.cyber-page {
+  --cy-bg: #ffffff;
+  --cy-text: #172b46;
+  --cy-muted: #5d6e83;
+  --cy-border: #e0e8f1;
+  background: #f5f8fc;
+  padding: 0;
+}
+.cyber-frame {
+  max-width: 1600px;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.cyber-header { border-bottom-color: #e9eef5; }
+.cyber-page .brand { color: #172448; }
+.cyber-page .brand small { color: #5d7391; }
+.cyber-page .brand img { background: transparent; }
+.cyber-header nav a { color: #53647c; font-weight: 500; }
+.cyber-header nav a:hover, .cyber-signin { color: #176ab3; }
+.cyber-button {
+  background: #1674c5;
+  border-color: #1674c5;
+  border-radius: 9px;
+  box-shadow: 0 5px 14px #176ab318;
+}
+.cyber-button:hover { background: #105fa5; filter: none; }
+.cyber-outline { color: #334c68; background: #fff; border-color: #d8e3ee; border-radius: 9px; }
+.cyber-outline:hover { background: #f1f7fc; }
+.cyber-hero {
+  background: radial-gradient(ellipse at 82% 46%, #e9f5fd 0%, #f5faff 32%, transparent 63%);
+}
+.cyber-eyebrow { color: #537392; }
+.hero-copy > .cyber-eyebrow {
+  display: inline-flex;
+  padding: 9px 12px;
+  background: #edf6fc;
+  border: 1px solid #dbeaf5;
+  border-radius: 30px;
+  color: #38749e;
+  letter-spacing: 1.3px;
+}
+.cyber-eyebrow > span { background: #2594c1; box-shadow: none; }
+.hero-copy h1 { font-weight: 750; }
+.hero-copy h1 > span { color: #147bc2; background: none; }
+.hero-assurance { color: #60778d; }
+.hero-assurance svg { color: #328d96; }
+.visual-grid {
+  background-image: linear-gradient(#8faec31a 1px, transparent 1px), linear-gradient(90deg, #8faec31a 1px, transparent 1px);
+}
+.orbit { border-color: #81adce35; }
+.orbit-two { border-color: #94b2d02e; }
+.orbit-three { border-color: #73acd238; }
+.visual-top-label { color: #688aa4; }
+.visual-top-label span { background: #3c9eb7; }
+.layer-bottom {
+  background: linear-gradient(130deg, #cfe0f3, #dee7f5);
+  border-color: #b9cee4;
+  box-shadow: 8px 10px 0 #c6d9e9, 0 22px 48px #4e8fbc20;
+}
+.layer-middle {
+  background: linear-gradient(150deg, #e6f7fd, #d6e8f9);
+  border-color: #b5d9ec;
+  box-shadow: 4px 6px 0 #bedceb;
+}
+.layer-top {
+  background: linear-gradient(120deg, #f4fcff, #e2efff);
+  border-color: #acd1ef;
+  box-shadow: inset 0 0 35px #d6eafa44;
+}
+.shield-halo { background: #70b9ed; opacity: .2; }
+.hero-shield svg {
+  stroke: #238ac9;
+  fill: #f3fbff;
+  filter: drop-shadow(4px 6px 0 #bdddf0) drop-shadow(0 12px 18px #5a9bb22b);
+}
+.hero-shield span { color: #3b7fa6; }
+.signal-card {
+  background: #ffffffed;
+  border-color: #d9e7f2;
+  box-shadow: 0 14px 38px #234f7612;
+  backdrop-filter: blur(10px);
+}
+.signal-access, .signal-events, .signal-tenant { transform: none; }
+.signal-card small { color: #698197; }
+.signal-card b { color: #243d59; }
+.signal-card div > span { color: #6d8093; }
+.signal-icon.cyan { background: #e8f6fc; color: #298eb3; }
+.signal-icon.violet { background: #eef1fc; color: #6c83bd; }
+.signal-light { background: #43a98a; }
+.signal-bars i { background: linear-gradient(#56aedb, #a3d4eb); }
+.signal-tenant { color: #536d83; }
+.signal-tenant > svg:first-child { color: #358eb9; }
+.signal-tenant > svg:last-child { color: #39a484; }
+.visual-spark { background: #79bad7; box-shadow: none; }
+.spark-two { background: #93b7d2; }
+.platform-strip { border-color: #e5edf5; }
+.platform-strip > span { color: #7a8c9c; }
+.platform-strip > span b { color: #49657e; }
+.platform-strip > div { color: #536d83; }
+.platform-strip svg { color: #508caf; }
+.capability-intro h2 span { color: #6984a0; }
+.capability-intro > a { color: #237cb6; }
+.capability-grid article {
+  background: #fff;
+  border-color: #e2eaf2;
+  border-radius: 13px;
+  box-shadow: 0 4px 18px #26497405;
+  transition: border-color .2s, box-shadow .2s;
+}
+.capability-grid article:hover { border-color: #b8d5eb; box-shadow: 0 12px 30px #2649740b; }
+.capability-icon { color: #377fae; background: #edf6fc; border-color: #e2eef7; }
+.capability-grid article:nth-child(2) .capability-icon { background: #eef2fc; color: #7385b7; }
+.capability-grid article:nth-child(3) .capability-icon { background: #edf8f4; color: #4e9582; }
+.capability-grid small { color: #91a4b7; }
+.capability-grid p { color: #62778b; }
+.cyber-steps { background: #f6f9fc; border-color: #e9eff6; }
+.cyber-steps li > span { color: #2c82b8; background: #fff; border-color: #d8e7f2; }
+.cyber-steps li p { color: #647a8e; }
+.cyber-cta {
+  background: radial-gradient(ellipse at 100% 10%, #dceefb, transparent 65%), #eff7fd;
+  border-color: #d8e8f4;
+  border-radius: 16px;
+}
+.cyber-footer { border-color: #e6edf4; }
+.cyber-footer > span { color: #698098; }
+.cyber-footer > small { color: #74879b; }
+.cyber-dialog-theme .modal {
+  background: #fff;
+  color: #1e3651;
+  border-color: #dce7f0;
+  border-radius: 16px;
+  box-shadow: 0 25px 100px #19385830;
+}
+.cyber-dialog-theme .modal::backdrop { background: #17345350; backdrop-filter: blur(6px); }
+.cyber-dialog-theme .icon-button { color: #6c8298; }
+.cyber-dialog-theme .icon-button:hover { background: #f0f5fa; }
+.cyber-dialog-theme input { background: #fafdff; border-color: #d8e3ee; color: #273e55; border-radius: 8px; }
+.cyber-dialog-theme input::placeholder { color: #8b9bae; }
+.cyber-dialog-theme input:focus { outline-color: #6aa6d4; }
+.auth-intro, .signup-note { color: #687e94; }
+.form-section-title { color: #427ba3; }
+.onboarding-form label small { color: #718499; }
+.password-input button { color: #67849e; }
+.auth-switch { color: #6b8297; }
+.auth-switch button { color: #1876b7; font-weight: 600; }
+.auth-demo { color: #627c93; border-color: #e4ebf3; }
+.created-notice { background: #eef8f3; border-color: #cde9dc; color: #337860; }
+.created-notice button { color: #49816d; }
+.cyber-dialog-theme .error { background: #fff2ef; border-color: #f0d8d2; color: #a35042; }
+@media (max-width: 480px) {
+  .hero-copy > .cyber-eyebrow { font-size: 7px; letter-spacing: 1px; padding: 8px 10px; }
+  .cyber-hero { background: linear-gradient(#fff, #f1f8fd); }
+}

@@ -1,0 +1,33 @@
+/* Navy and cyan public landing theme, inspired by the supplied reference. */
+.cyber-page{--cy-bg:#03182d;--cy-text:#f4f9ff;--cy-muted:#a6bbce;background:#03182d}
+.cyber-frame{background:#03182d}
+.cyber-header{border-bottom:0;min-height:96px}
+.cyber-page .brand{color:#fff}.cyber-page .brand small{color:#a6c8d9}
+.cyber-header nav a{color:#d0e1ed}.cyber-header nav a:hover,.cyber-signin{color:#fff}
+.cyber-button{background:#02bfe5;border-color:#02bfe5;color:#032640;border-radius:28px;box-shadow:0 4px 20px #00b9e81a}
+.cyber-button:hover{background:#54d8f0;border-color:#54d8f0}
+.cyber-outline{background:#fff;color:#087e9f;border-color:#e0f7ff;border-radius:28px}.cyber-outline:hover{background:#e9faff}
+.cyber-hero{min-height:610px;padding-block:70px;background:radial-gradient(ellipse at 73% 52%,#07526b22,transparent 54%);gap:15px}
+.hero-copy>.cyber-eyebrow{background:transparent;border:0;padding:0;color:#62cfe3;font-size:9px;letter-spacing:2px}
+.hero-copy h1{font-size:clamp(38px,4vw,60px);letter-spacing:-1.6px;line-height:1.2;max-width:610px}
+.hero-copy h1>span{color:#f4f9ff;background:none}
+.hero-copy{min-width:0;container-type:inline-size}
+.hero-copy h1.hero-title{font-size:clamp(12px,7cqi,52px);max-width:none;letter-spacing:-.035em;line-height:1.25}
+.hero-title>span{display:block;white-space:nowrap}
+.hero-copy>p{color:#adc1d2;font-size:14px;max-width:435px;line-height:1.9}
+.hero-assurance{color:#839fb5}.hero-assurance svg{color:#38c9db}
+.security-visual{height:auto;min-height:440px;display:grid;place-items:center;margin:0;transform:none}
+.security-laptop{width:112%;max-width:660px;height:auto;overflow:visible;filter:drop-shadow(0 25px 35px #0002)}
+.platform-strip{border-color:#173449}.platform-strip>span{color:#7b9db5}.platform-strip>span b,.platform-strip>div{color:#b2cbdc}.platform-strip svg{color:#3ab5ce}
+.cyber-eyebrow{color:#64b7cd}.capability-intro h2 span{color:#7dc6dc}.capability-intro>a{color:#48c9e7}
+.capability-grid article{background:#08233a;border-color:#193c51;box-shadow:none}.capability-grid article:hover{border-color:#38758b;box-shadow:0 12px 30px #0001}
+.capability-grid p{color:#a4bbcc}.capability-grid small{color:#567d98}
+.capability-icon,.capability-grid article:nth-child(2) .capability-icon,.capability-grid article:nth-child(3) .capability-icon{background:#0c324a;border-color:#1a4b63;color:#60d3e6}
+.cyber-steps{background:#062037;border-color:#173449}.cyber-steps li>span{background:#0c334b;border-color:#205068;color:#6dd5e6}.cyber-steps li p{color:#abc0d1}
+.cyber-cta{background:linear-gradient(110deg,#0a2b42,#0b3e53);border-color:#225069}.cyber-footer{border-color:#19384e}.cyber-footer>span,.cyber-footer>small{color:#87a6bd}
+/* Keep forms light and easy to read. */
+.cyber-dialog-theme .modal{color:#1e3651}.cyber-dialog-theme .cyber-button{color:#032640}.cyber-dialog-theme .form-section-title{color:#427ba3}
+@media(min-width:1500px){.cyber-hero{min-height:650px}.hero-copy h1{font-size:60px}}
+@media(max-width:1100px){.cyber-hero{min-height:530px}.hero-copy h1{font-size:43px}.security-visual{min-height:350px}.security-laptop{width:112%}}
+@media(max-width:800px){.cyber-hero{padding-block:45px 25px}.hero-copy h1{margin-inline:auto;font-size:46px}.security-visual{min-height:0;margin:25px auto 0;width:100%;max-width:540px}.security-laptop{width:100%}}
+@media(max-width:480px){.cyber-header{min-height:80px}.cyber-hero{background:#03182d;padding-top:35px}.hero-copy h1{font-size:35px;letter-spacing:-1px}.hero-copy>.cyber-eyebrow{font-size:7px;letter-spacing:1.3px}.hero-copy>p{font-size:12px}.security-visual{height:auto}.security-laptop{width:108%}}
