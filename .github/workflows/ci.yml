@@ -1,0 +1,46 @@
+name: Verify application
+on: [push, pull_request]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: deeptrace
+          POSTGRES_PASSWORD: testing-only
+          POSTGRES_DB: deeptrace_test
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U deeptrace -d deeptrace_test"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql+psycopg://deeptrace:testing-only@localhost:5432/deeptrace_test
+      TEST_DATABASE_URL: postgresql+psycopg://deeptrace:testing-only@localhost:5432/deeptrace_test
+      JWT_SECRET: ci-only-secret-at-least-32-characters-long
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r Backend/requirements.txt
+      - working-directory: Backend
+        run: |
+          alembic upgrade head
+          alembic check
+          python -m app.seed
+          alembic downgrade base
+          pytest -q
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: Frontend/package-lock.json
+      - working-directory: Frontend
+        run: npm ci
+      - working-directory: Frontend
+        run: npm run build

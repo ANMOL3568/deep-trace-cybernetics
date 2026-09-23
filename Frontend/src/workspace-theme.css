@@ -1,0 +1,99 @@
+/* Shared navy/cyan brand palette for every authenticated workspace screen. */
+.app-shell {
+  --workspace-navy: #03182d;
+  --workspace-cyan: #02bfe5;
+  --workspace-ink: #18354f;
+  --workspace-muted: #647c91;
+  --workspace-border: #dfe9f1;
+  background: #f3f7fb;
+  color: var(--workspace-ink);
+}
+.app-shell .sidebar { background: var(--workspace-navy); color: #9bb6cb; }
+.app-shell .workspace { background: #0b2940; border-color: #214357; color: #a9c6d8; }
+.app-shell .workspace b { color: #edf7ff; }
+.app-shell .tenant-avatar { background: #c7f1fb; color: #086e8d; }
+.app-shell .add-organization { background: #0c3046; border-color: #245268; color: #a4e9f5; }
+.app-shell .add-organization:hover { background: #11415b; }
+.app-shell .nav-label { color: #7d9cb5; }
+.app-shell nav button { color: #a2b9cc; }
+.app-shell nav button:hover { background: #0b3048; color: #e6f9ff; }
+.app-shell nav button.selected { background: #0d3d55; color: #9fefff; box-shadow: inset 3px 0 var(--workspace-cyan); }
+.app-shell nav button.selected svg { color: #4dd9f2; }
+.app-shell .nav-dot { background: #41d7ed; }
+.app-shell .security-status, .app-shell .profile { border-color: #1b384e; }
+.app-shell .security-status b { color: #c3dce9; }
+.app-shell .security-status small { color: #8ca8bd; }
+.app-shell .pulse { background: #29bdd5; box-shadow: 0 0 0 3px #29bdd515; }
+.app-shell .profile b { color: #e3f1fa; }
+.app-shell .profile .avatar { background: #163e58; color: #aeeaf8; }
+.app-shell .profile .icon-button { color: #9dc2d6; }
+.app-shell .profile .icon-button:hover { background: #15405a; }
+.app-shell .topbar { background: #fff; border-color: var(--workspace-border); }
+.app-shell .topbar > div > span:first-child { color: #688296; }
+.app-shell .breadcrumb-slash { color: #a8bac9; }
+.app-shell .environment { border-color: #dcecf3; background: #f6fbfe; color: #51758c !important; }
+.app-shell .top-avatar, .app-shell .avatar { background: #e3f4fb; color: #287a9a; border-color: #f1f9fd; }
+.app-shell .eyebrow { color: #6b869e; }
+.app-shell .heading-dot { color: #09a6cd; }
+.app-shell .page-heading p { color: var(--workspace-muted); }
+.app-shell .primary { background: #02bfe5; color: #042b43; box-shadow: 0 3px 10px #00a7ca15; }
+.app-shell .primary:hover { background: #3ed1ee; }
+.app-shell .secondary { border-color: #d6e4ef; color: #42677f; background: #fff; }
+.app-shell .secondary:hover { background: #eef7fc; }
+.app-shell .icon-button { color: #587c93; }
+.app-shell .icon-button:hover { background: #eaf5fb; }
+.app-shell .bordered, .app-shell .date-chip { border-color: #dce7f0; color: #52768f; }
+.app-shell .panel, .app-shell .metric, .app-shell .campaign-card { border-color: var(--workspace-border); box-shadow: 0 3px 14px #133e6503; }
+.app-shell .panel-heading p, .app-shell .section-heading p { color: #6c8398; }
+.app-shell .subtle-chip { color: #67859c; border-color: #e1eaf3; }
+.app-shell .overview-banner { background: #eaf6fc; border-color: #cfe6f4; }
+.app-shell .overview-banner p { color: #597f97; }
+.app-shell .overview-banner button { color: #187da4; }
+.app-shell .banner-icon { background: #d3edf8; color: #2688aa; }
+.app-shell .metric > div { color: #617e94; }
+.app-shell .metric small { color: #70899b; }
+.app-shell .mint { color: #298daa; background: #e9f7fc; }
+.app-shell .bar { background: #b5dfef; }
+.app-shell .bar.today { background: #09b4da; }
+.app-shell .bars { border-color: #dfebf3; background: repeating-linear-gradient(to top, transparent 0, transparent 66px, #eaf1f7 67px, #eaf1f7 68px); }
+.app-shell .bar-count { color: #527e96; }
+.app-shell .chart-scale, .app-shell .bar-column > span:last-child, .app-shell .chart-caption { color: #718ca0; }
+.app-shell .chart-caption i { background: #40b9d8; }
+.app-shell .severity-total span, .app-shell .severity-legend span { color: #6b8499; }
+.app-shell .text-button, .app-shell .card-link { color: #147fa6; }
+.app-shell .campaign-symbol { background: #eaf7fd; border-color: #d8ebf5; color: #2f8cae; }
+.app-shell .campaign-card:hover { background: #f1f9fd; }
+.app-shell .campaign-card p { color: #70879c; }
+.app-shell .card-link { border-color: #e3edf4; }
+.app-shell th { color: #668298; background: #f6f9fc; border-color: #e4edf4; }
+.app-shell td { border-color: #e5edf4; }
+.app-shell tbody tr:hover { background: #f6fbfe; }
+.app-shell td small, .app-shell .muted { color: #70889c; }
+.app-shell .record-title:hover b { color: #0789b3; }
+.app-shell .search-box { border-color: #dce7f0; color: #6e91a7; }
+.app-shell input, .app-shell select, .app-shell textarea { border-color: #d8e5ef; color: #26465f; }
+.app-shell input:focus, .app-shell select:focus, .app-shell textarea:focus { outline-color: #55b6d4; }
+.app-shell button:focus-visible, .app-shell a:focus-visible { outline-color: #36b7dc; }
+.app-shell .pagination { border-color: #e4edf4; color: #6c879c; }
+.app-shell .badge.admin, .app-shell .badge.active { background: #e0f5fc; color: #1683a6; }
+.app-shell .badge.manager { background: #ebf0fd; color: #627cae; }
+.app-shell .you, .app-shell .count-pill { background: #e9f4fb; color: #4d87a3; }
+.app-shell .empty { color: #6f8a9f; }
+.app-shell .page-footer { color: #7b93a7; border-color: #dfe9f1; }
+.app-shell .modal { background: #fff; color: #193951; border-color: #d9e7f1; box-shadow: 0 24px 100px #06274730; }
+.app-shell .modal::backdrop { background: #03182d80; }
+.app-shell .modal-description { color: #6a8295; }
+.app-shell .modal-actions, .app-shell .member-row, .app-shell .member-picker { border-color: #e0ebf3; }
+.app-shell .member-row small, .app-shell .organization-created p { color: #68869c; }
+.app-shell .danger-text { color: #b45c58; }
+.app-shell .sidebar-overlay { background: #03182d80; }
+.app-shell .sidebar { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: #285269 #03182d; }
+.app-shell .sidebar > * { flex-shrink: 0; }
+.app-shell .sidebar-bottom { padding-top: 24px; }
+.app-shell .logout-button { display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid #cbe2ee; border-radius: 7px; background: #edf8fc; color: #126784; font-size: 11px; font-weight: 600; white-space: nowrap; }
+.app-shell .logout-button:hover { background: #dff3fa; border-color: #90cedf; }
+@media (max-width: 480px) {
+  .app-shell .topbar > div { gap: 7px; }
+  .app-shell .top-avatar { display: none; }
+  .app-shell .logout-button { padding: 8px; gap: 5px; font-size: 10px; }
+}
